@@ -1,5 +1,18 @@
-body {
-    background: rgb(254, 227, 246)
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Playfair+Display&family=Quicksand:wght@300..700&family=Silkscreen&display=swap');
+html, body {
+    background-color: rgb(254, 227, 246);
+    color: white;
+}
 
+h1{
+    color: lightskyblue;
+    font-family: "Playfair Display";
+} 
 
+#fun-container{
+    background-color: plum;
+}
+
+.fun-text{
+    background-color: plum;
 }
