@@ -20,13 +20,18 @@ def get_data():
     return app.send_static_file("data.json")
 
  # New functions
-    @app.route("/about/")
-    def about():
-        return render_template("about.html")
+@app.route("/about/")
+def about():
+     # Declare variable 
+     current_mood = "mid"
+     friends_list = ['Eliza', 'Courtney', 'Lucian', 'Alex', 'Abby', 'Sohan', 'Grace']
+     definitions = {'platypus':'a blue-green creature that is very good at solving mysteries', 'ladybug':'an apex predator with magical properties','giraffe':'long neck animal with purple tounge'}
+     # Pass variable into rendered template
+     return render_template("about.html", mood = current_mood, friends = friends_list, my_dict=definitions)
 
-    @app.route("/contact/")
-    def contact():
-        return render_template("contact.html")
+@app.route("/contact/")
+def contact():
+    return render_template("contact.html")
 
 # Allows you to click RUN button
 if __name__ == '__main__':
